@@ -1,0 +1,74 @@
+﻿Spécifications Techniques pour la Recréation du Site Filature des Landes – Catusse
+1. Objectif et Portée du Projet
+Ce document technique sert de guide directeur pour la reconstruction statique (environnement HTML/STITCH) du site "Filature des Landes – Catusse". La mission critique consiste à restaurer l'intégralité de la structure, du contenu textuel et de l'arborescence tels qu'ils apparaissaient lors de l'archivage de juin 2021. L'objectif est une fidélité absolue aux données sources pour garantir la pérennité de l'archive numérique.
+2. Architecture de Navigation Principale
+L'en-tête doit intégrer une structure de navigation hiérarchique respectant l'indentation de la source. Le champ de recherche est une composante intégrée au flux de la navigation.
+Structure HTML attendue : Une liste non ordonnée (<ul>) dont le premier élément contient une sous-liste pour les sections secondaires.
+Arborescence :
+Accueil
+Entreprise
+Actualités
+Produits
+Galerie
+Contact
+Champ de recherche : Un élément <li> ou un conteneur adjacent immédiat contenant le texte "entrez votre recherche".
+3. Structure et Mise en Page de la Page d'Accueil
+Section Hero / Diaporama (Slider)
+Le module de mise en avant doit être configuré avec les éléments suivants :
+Contrôles : Liens de navigation textuels "prev" et "next".
+Triggers numériques : Une liste de navigation (<nav> ou <div>) comportant les chiffres "1 2 3 4" servant de points d'ancrage pour le slider.
+Bloc Portfolio : Un conteneur identifié par un titre <h4>Portfolio</h4> incluant le lien hypertexte "Voir +".
+Contenu Principal (Welcome Text)
+Le bloc de texte de bienvenue doit utiliser la balise <strong> pour les termes mis en évidence dans la source : "Bienvenue sur le site de la filature des landes, située à Villecomtal en Aveyron."
+Description de l'Activité
+Le texte de présentation doit être restitué avec exactitude, incluant l'intégralité de la gamme de produits mentionnée : "Nous produisons de la laine ainsi que des métiers à tisser et des métiers à tapisserie, ainsi que des accessoires associés au cardage, au filage et bien d'autres choses encore telles que des matelas, couvertures et autres literie en laine."
+4. Organisation des Gammes et du Savoir-faire
+Cette section doit être structurée via un élément <table> ou une grille CSS simulant deux colonnes distinctes avec des en-têtes de niveau 6 (<h6>).
+Nos gammes de produits (<th>)
+Notre savoir faire (<th>)
+
+• Métiers à tisser
+• Fabrication de métiers à tisser
+
+• Literie
+• Fabrication de matelas
+
+• Laines
+• Tissage
+
+• Rouets et autres matériels
+• Filage
+
+5. Section Latérale et Flux d'Informations (Sidebar)
+Articles Récents
+La sidebar doit lister les cinq derniers articles en respectant scrupuleusement la casse (Majuscules/Minuscules) de la source :
+LES ATELIERS DE LA FILATURE
+STAGE DE FEUTRE A L'AIGUILLE ET A L'EAU
+STAGE DE TISSAGE 2019
+Journées de la laine à FELLETIN (23 CREUSE) 2018
+FETE DE LA LAINE A GENOLHAC (30)
+Bloc Newsletter
+Titre : <h5>newsletter</h5> (en minuscules, selon la source).
+Texte : "Inscrivez-vous à notre newsletter pour recevoir les dernières nouveautés."
+Action : Bouton ou lien étiqueté "s'abonner".
+Options de Partage
+Les options de partage doivent être listées sans icônes externes, en utilisant uniquement les chaînes de caractères verbatim :
+Recommander sur Facebook
+Twitter cette page
+Imprimer
+Envoyer a un ami (Note : L'absence d'accent sur le "a" est volontaire et conforme à l'archive).
+6. Configuration du Pied de Page (Footer)
+Mention de Copyright
+La mention légale doit être reproduite exactement comme suit : "© 2026 Filature des Landes – Catusse. Tous droits réservés."
+Navigation Secondaire
+Une liste horizontale ou bloc de liens de bas de page comprenant :
+Actualités, Contact, Galerie, Produits, Mentions légales.
+7. Directives de Contenu pour l'Intégration STITCH
+Le développement du code HTML simulé doit suivre ces contraintes techniques strictes :
+Sémantique Rigoureuse : Utilisation impérative des balises <header>, <nav>, <main>, <section>, <aside>, et <footer>.
+Mapping des Contrôles : Les éléments "1 2 3 4" du slider doivent être mappés comme des ancres ou des boutons de contrôle au sein d'un conteneur ID spécifique au diaporama.
+Formatage Textuel : Utiliser la balise <strong> pour le texte gras de la page d'accueil. Les titres de la sidebar et des gammes de produits doivent respecter les niveaux de titres (<h4>, <h5>, <h6>) identifiés dans le contexte.
+Interdiction de Ressources Externes : Il est strictement interdit d'utiliser des bibliothèques d'icônes (type FontAwesome), des scripts externes non documentés ou du texte de remplissage de type "Lorem Ipsum". Tout le contenu doit être extrait exclusivement de la source fournie.
+Respect de la casse : Ne pas normaliser la casse des titres d'articles ou des en-têtes (ex: "newsletter" doit rester en minuscules si la source l'indique ainsi).
+
+

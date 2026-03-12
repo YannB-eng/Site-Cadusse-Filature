@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Actualités et Événements - Filature des Landes</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#cf8217",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#211a11",
+                        "neutral-soft": "#e8e4de",
+                        "text-main": "#181511",
+                        "text-muted": "#887863",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-text-main font-display min-h-screen">
+    <!-- Header / TopNavBar -->
+    <header class="sticky top-0 z-50 glass-effect border-b border-primary/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                    <img src="images/logo.png" alt="Filature des Landes Logo" class="h-10 w-auto">
+                    <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Filature des Landes</span>
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="index.html">Accueil</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="entreprise.html">Entreprise</a>
+                <a class="text-sm font-semibold text-primary uppercase tracking-wider" href="actualites.html">Actualités</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="produits.html">Produits</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="galerie.html">Galerie</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="contact.html">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                </button>
+                <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all">
+                    <span class="material-symbols-outlined">person</span>
+                </button>
+                <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all md:hidden">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-6 lg:px-20 py-12">
+        <!-- Hero Section -->
+        <div class="mb-12 relative overflow-hidden rounded-xl h-[300px] flex items-end p-8 bg-neutral-soft">
+            <div class="absolute inset-0 bg-cover bg-center grayscale opacity-60"
+                data-alt="Traditional wool spinning mill interior with vintage machinery"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdYNlZf35Q5JAXkvfBC3Mb11WcTlYFej8YykFnsK7tVpVzcsJN94T6MflfeMfabAVw9mzMl4vKlJB2HWEcsoqHiQrgWA9tQmA2NFxpipImlgxhI9UibPjEe1jBNhjuYwePdBFonNOQXrHoKHshWwAODg1qX8lmsS3q4wJiKFXINF6YXMRFzHl2vMPAmOfWsSYFZNoQkNoBiKamfY29kW900Nt_bx6wOYjJn04m8sulyfS2_jUyfXbBwkm9k_62K_8hrOyNYOaY41cK');">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-background-dark/60 to-transparent"></div>
+            <div class="relative z-10">
+                <nav class="flex items-center gap-2 text-white/80 text-sm mb-4">
+                    <a class="hover:underline" href="#">Accueil</a>
+                    <span class="material-symbols-outlined text-xs">chevron_right</span>
+                    <span class="font-semibold text-white">Actualités</span>
+                </nav>
+                <h1 class="text-5xl md:text-6xl font-black text-white uppercase tracking-tighter">Actualités</h1>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <!-- Articles Grid -->
+            <div class="lg:col-span-8 space-y-12">
+                <!-- Large Featured Article -->
+                <article class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-xl mb-6 aspect-[16/9]">
+                        <img alt="Stage de tissage"
+                            class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Hand weaving wool on a traditional wooden loom"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzgtXfUxSwFduUJKCwlWA4VBRzKRMH_WUf-P20cdaIOyVXoMbOu3BzzweO0Vj4W_cYEoCSM3rXLyWpJdzbCq6Q9urW_fIuYvywJ42Ko2XLdyCo20k6ljbcNn5iGABFNU6h2g2GvVaDr3_-b9xA3B1GIRR1WS2_BZ3enWshHfXpalR0V8oZnZHwoRNUzPcEzWrY4_8KsaLcnLd_wzOijL7ygpJHUJms86Q0PPfE9zzWRtpcLouieeZhvCr0JXPuBiKrgwdIPisPAk1d" />
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">
+                            Événement</div>
+                    </div>
+                    <div class="space-y-3">
+                        <div
+                            class="flex items-center gap-4 text-text-muted text-xs font-semibold tracking-wider uppercase">
+                            <span>15 Octobre 2023</span>
+                            <span class="w-1 h-1 bg-primary rounded-full"></span>
+                            <span>Aveyron, France</span>
+                        </div>
+                        <h2 class="text-3xl font-bold leading-tight group-hover:text-primary transition-colors">LES
+                            ATELIERS DE LA FILATURE</h2>
+                        <p class="text-text-muted leading-relaxed text-lg italic">
+                            Découvrez l'âme de notre métier à travers des sessions immersives. Apprenez le cardage, le
+                            filage et les secrets d'une laine d'exception transformée au cœur de nos vallées.
+                        </p>
+                        <a class="inline-flex items-center gap-2 text-primary font-bold border-b-2 border-transparent hover:border-primary transition-all pt-2 uppercase text-xs tracking-widest"
+                            href="#">
+                            Lire la suite <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </article>
+                <!-- Magazine Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Article 2 -->
+                    <article class="group flex flex-col">
+                        <div class="rounded-lg overflow-hidden mb-5 aspect-[4/3] bg-neutral-soft">
+                            <img alt="Stage de feutre"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Felted wool art with needle detailing"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuEJxeT91UAvdio4wzaB1bjXI2hPudOBatthHy-86PXstHeZrQ3mX5hQIBcFVc6AMmWSP0ZjQVZbVqfcvznAmOCv7x5tRTJ2hOHNv6AO17f6HR2yIQ8Hfj_dljAWniTfmKl1b-F_jgrCrqm6yvOD0CPdAwB7JqbMzIeUmdWo3GJRM3xsH_ceHCw_mmj-vP3iDBtG_hR1Aahc-Mz5ohZ71IkKSskSIsZHWtp4qhPhIDksFMrroPgsr6qEFv7oHSKfg7rjeCVHgUECyL" />
+                        </div>
+                        <div class="flex-1 flex flex-col">
+                            <span class="text-[10px] text-primary font-bold tracking-widest uppercase mb-2">Stage
+                                Artisanal</span>
+                            <h3 class="text-xl font-bold mb-3 uppercase leading-snug">STAGE DE FEUTRE A L'AIGUILLE ET A
+                                L'EAU</h3>
+                            <p class="text-text-muted text-sm leading-relaxed mb-4">
+                                Un moment de partage autour du feutrage traditionnel. Maîtrisez la fusion des fibres
+                                pour créer des pièces uniques et durables.
+                            </p>
+                            <a class="mt-auto text-xs font-bold uppercase tracking-widest text-text-main group-hover:text-primary transition-colors flex items-center gap-1"
+                                href="#">
+                                Lire la suite <span class="material-symbols-outlined text-xs">east</span>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- Article 3 -->
+                    <article class="group flex flex-col">
+                        <div class="rounded-lg overflow-hidden mb-5 aspect-[4/3] bg-neutral-soft">
+                            <img alt="Stage de tissage 2019"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Traditional weaving shuttle with natural wool thread"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwpohHZjp-1Q0QqEcie2zpvcNihT5QOhkxuPgpmDjL-B2xIs4zSU23PXxPNvF_rFZCrgfOAxwMEIJH3AlfJZHQSm-1h3xOEZgWoaI0PphDw0uhdle9wCCBKKmK2yoiFBUzL5u_UQNZtNMPjwMrmb-eL_6KvbTrXLjgSMziWtievmDbpMfWuTu_CZ_dnuMplPqKVofuI_nIvm0flzaC3S-gnmon56cM2MvUmHZCYsuCiIJ_PhAZYpYLy1n_7u0pp-xCvFv-aBXs-FjW" />
+                        </div>
+                        <div class="flex-1 flex flex-col">
+                            <span class="text-[10px] text-primary font-bold tracking-widest uppercase mb-2">Archives
+                                2019</span>
+                            <h3 class="text-xl font-bold mb-3 uppercase leading-snug">STAGE DE TISSAGE 2019</h3>
+                            <p class="text-text-muted text-sm leading-relaxed mb-4">
+                                Retour sur notre apprentissage des points de tissage ancestraux. Une transmission de
+                                savoir-faire précieuse entre générations.
+                            </p>
+                            <a class="mt-auto text-xs font-bold uppercase tracking-widest text-text-main group-hover:text-primary transition-colors flex items-center gap-1"
+                                href="#">
+                                Lire la suite <span class="material-symbols-outlined text-xs">east</span>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- Article 4 -->
+                    <article class="group flex flex-col">
+                        <div class="rounded-lg overflow-hidden mb-5 aspect-[4/3] bg-neutral-soft">
+                            <img alt="Journées de la laine"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Outdoor festival stalls showing wool crafts"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI-s4e8TBxKADoHk-xF72WkbkSdgqBWhghAO4JZu2YN8fPwXOeyLT_pIO7TY2HGfP1w1tVDmCFkmQcTfIaRWtwGKRyrXia5li4HwYWsfbN2RVj8uDjGepBx7yl1P19i1eo-O9imhUtxW2q-3_8Xljj-fGbb812bQAoYyFFXHS4Y9DANBSF2emYJ3AC08oX6cunO1eV2D2be1byXwY5qIu9gTt0pFifATbbhy0C6lzkpt94PDRIihn88CW_3ciLWI8zvAPcDPaST5ch" />
+                        </div>
+                        <div class="flex-1 flex flex-col">
+                            <span class="text-[10px] text-primary font-bold tracking-widest uppercase mb-2">Région
+                                Creuse</span>
+                            <h3 class="text-xl font-bold mb-3 uppercase leading-snug">Journées de la laine à FELLETIN
+                                (23 CREUSE) 2018</h3>
+                            <p class="text-text-muted text-sm leading-relaxed mb-4">
+                                Retrouvez la filature lors de ce grand rendez-vous de la laine. Une célébration du
+                                patrimoine lainier français.
+                            </p>
+                            <a class="mt-auto text-xs font-bold uppercase tracking-widest text-text-main group-hover:text-primary transition-colors flex items-center gap-1"
+                                href="#">
+                                Lire la suite <span class="material-symbols-outlined text-xs">east</span>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- Article 5 -->
+                    <article class="group flex flex-col">
+                        <div class="rounded-lg overflow-hidden mb-5 aspect-[4/3] bg-neutral-soft">
+                            <img alt="Fête de la laine"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Colorful balls of natural sheep wool yarn"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwc09R6PiHnbRa7BgOCDSEPtoYFyS_u6v3T5WZYwSA0zSnKqFwrx4IRe0ed3StJtsZ7iOe7p9A_pZ8pGmnGmGWRCpIBu092Gav7lka76F-V7ES_KZGB3IZ28dB1vknZ-v3hRrfbJZzRKvCVMgJTCBNXbkH2NlmKqxdFZ6mffgg4fUxCnHA3pQMti4yj7D6Yr0lg90ukqk7MWZ0Tl15JZ1YqUKCpYIOla0puTgZjgRYlyM75KaAUYt6Rg-ghD5-kmSu-bndN9xFHZMp" />
+                        </div>
+                        <div class="flex-1 flex flex-col">
+                            <span
+                                class="text-[10px] text-primary font-bold tracking-widest uppercase mb-2">Occitanie</span>
+                            <h3 class="text-xl font-bold mb-3 uppercase leading-snug">FETE DE LA LAINE A GENOLHAC (30)
+                            </h3>
+                            <p class="text-text-muted text-sm leading-relaxed mb-4">
+                                Une fête conviviale célébrant le patrimoine lainier d'Occitanie au pied du Mont Lozère.
+                                Rencontres et démonstrations.
+                            </p>
+                            <a class="mt-auto text-xs font-bold uppercase tracking-widest text-text-main group-hover:text-primary transition-colors flex items-center gap-1"
+                                href="#">
+                                Lire la suite <span class="material-symbols-outlined text-xs">east</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <aside class="lg:col-span-4 space-y-12">
+                <!-- Newsletter Block -->
+                <div class="p-8 rounded-xl bg-neutral-soft/40 border border-neutral-soft relative overflow-hidden">
+                    <div class="absolute -top-10 -right-10 opacity-10">
+                        <span class="material-symbols-outlined text-[150px]">mail</span>
+                    </div>
+                    <div class="relative z-10">
+                        <h4 class="text-2xl font-bold mb-4">Newsletter</h4>
+                        <p class="text-text-muted text-sm mb-6 leading-relaxed">
+                            Inscrivez-vous à notre newsletter pour recevoir les dernières nouveautés de la Filature des
+                            Landes et nos prochains ateliers.
+                        </p>
+                        <form class="space-y-4">
+                            <input
+                                class="w-full px-4 py-3 rounded-lg bg-white border-none focus:ring-2 focus:ring-primary/20 text-sm placeholder:text-text-muted/60"
+                                placeholder="votre@email.com" type="email" />
+                            <button
+                                class="w-full py-3 bg-primary text-white font-bold rounded-lg uppercase tracking-widest text-xs hover:bg-primary/90 transition-all shadow-md"
+                                type="submit">
+                                s'abonner
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Categories/Filters -->
+                <div class="p-8 border-t border-neutral-soft">
+                    <h4 class="text-sm font-bold uppercase tracking-widest mb-6">Catégories</h4>
+                    <ul class="space-y-4">
+                        <li><a class="flex justify-between items-center text-sm hover:text-primary transition-colors"
+                                href="#"><span>Ateliers &amp; Stages</span> <span
+                                    class="text-text-muted/50 font-mono text-xs">(12)</span></a></li>
+                        <li><a class="flex justify-between items-center text-sm hover:text-primary transition-colors"
+                                href="#"><span>Événements Locaux</span> <span
+                                    class="text-text-muted/50 font-mono text-xs">(8)</span></a></li>
+                        <li><a class="flex justify-between items-center text-sm hover:text-primary transition-colors"
+                                href="#"><span>Savoir-faire</span> <span
+                                    class="text-text-muted/50 font-mono text-xs">(15)</span></a></li>
+                        <li><a class="flex justify-between items-center text-sm hover:text-primary transition-colors"
+                                href="#"><span>Histoire</span> <span
+                                    class="text-text-muted/50 font-mono text-xs">(4)</span></a></li>
+                    </ul>
+                </div>
+                <!-- Featured Products Mini Section -->
+                <div class="p-8 bg-background-dark text-white rounded-xl">
+                    <h4 class="text-xs font-bold uppercase tracking-[0.2em] mb-6 text-primary">Le Coup de Coeur</h4>
+                    <div class="space-y-4">
+                        <div class="flex gap-4 items-center">
+                            <div class="w-16 h-16 rounded bg-white/10 flex-shrink-0 overflow-hidden">
+                                <img alt="Pelote" class="w-full h-full object-cover"
+                                    data-alt="Ball of natural beige sheep wool"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDey8ISYb86I9EJCS8d-kzD1VlmnoIuKedYWu5JMz6T5LuyUNVgkqwGoLXTAgUijxmskryds-EBndEAYiFe0OH0p39wRkCRNzfyhiCgpZYbGd3p0ICXJ12v5K_v_u7SwfyOqN_6tRAcAcOiIgonqVLP2Yal-_oHWW3QqS9SlDpJZR7kkRq9z_2dvIDL48j3gceY4OFjfi0cAoycoYgo1X8emwIfYJc1UeZrtZrfP1AKBcVczPXDcISp03wmRo_NB0w1qFfl1uEkt95Q" />
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold">Laine Pur Mérinos</p>
+                                <p class="text-primary text-sm">18,50€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="mt-8 block text-center py-2 border border-white/20 rounded text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-background-dark transition-all"
+                        href="#">Voir la boutique</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-neutral-soft/30 border-t border-neutral-soft mt-20 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="space-y-6">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="images/logo.png" alt="Filature des Landes Logo" class="h-10 w-auto grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all">
+                </a>
+                <p class="text-text-muted text-sm leading-relaxed">
+                    Artisans du textile depuis des générations en Aveyron, nous transformons la laine brute en fils
+                    d'exception.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-sm uppercase tracking-widest mb-6">Navigation</h4>
+                <ul class="space-y-3 text-sm text-text-muted">
+                    <li><a class="hover:text-primary transition-colors" href="#">Accueil</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Actualités</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Ateliers</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Boutique</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-sm uppercase tracking-widest mb-6">Contact</h4>
+                <ul class="space-y-3 text-sm text-text-muted">
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined text-sm">location_on</span> Catusse, Aveyron</li>
+                    <li class="flex items-center gap-3"><span class="material-symbols-outlined text-sm">mail</span>
+                        contact@filature-landes.fr</li>
+                    <li class="flex items-center gap-3"><span class="material-symbols-outlined text-sm">call</span> +33
+                        5 XX XX XX XX</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-sm uppercase tracking-widest mb-6">Suivez-nous</h4>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full bg-white border border-neutral-soft flex items-center justify-center text-text-muted hover:text-primary hover:border-primary transition-all shadow-sm"
+                        href="#">
+                        <span class="material-symbols-outlined text-lg">share</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 lg:px-20 mt-16 pt-8 border-t border-neutral-soft flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-text-muted uppercase tracking-widest font-semibold">
+            <p>© 2026 Filature des Landes - Tous droits réservés</p>
+            <div class="flex gap-8">
+                <a class="hover:text-primary" href="#">Mentions Légales</a>
+                <a class="hover:text-primary" href="#">CGV</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

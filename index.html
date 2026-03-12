@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Filature des Landes – Catusse | Traditionnelle filature et tissage de laine</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#cf8217",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#211a11",
+                        "neutral-soft": "#e8e4de",
+                        "text-main": "#181511",
+                        "text-muted": "#887863",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main min-h-screen overflow-x-hidden">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="sticky top-0 z-50 glass border-b border-primary/10">
+                <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                            <img src="images/logo.png" alt="Filature des Landes Logo" class="h-10 w-auto">
+                            <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Filature
+                                des Landes</span>
+                        </a>
+                    </div>
+                    <nav class="hidden md:flex items-center gap-10">
+                        <a class="text-sm font-semibold text-primary uppercase tracking-wider"
+                            href="index.html">Accueil</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                            href="entreprise.html">Entreprise</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                            href="actualites.html">Actualités</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                            href="produits.html">Produits</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                            href="galerie.html">Galerie</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                            href="contact.html">Contact</a>
+                    </nav>
+                    <div class="flex items-center gap-4">
+                        <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all">
+                            <span class="material-symbols-outlined">shopping_bag</span>
+                        </button>
+                        <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all">
+                            <span class="material-symbols-outlined">person</span>
+                        </button>
+                        <button
+                            class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all md:hidden">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1 max-w-[1440px] mx-auto w-full px-4 md:px-10 lg:px-20 py-8">
+                <section class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                    <div class="lg:col-span-3 flex flex-col gap-8">
+                        <div class="relative group h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-slate-200"
+                            id="hero-carousel">
+                            <!-- Slide 1 -->
+                            <div class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-700">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                                    style="background-image: url('images/metier-a-tisser-gerard.jpg');">
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-700">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAbCuQU84_gZUtvQRN1Y5nDXXJPQC71KE9Rxa9oNNs2Sbiflosn1F7Sa0xv48gwopBHSI9iMEqLxeV4LMFD-YxVZNVPg-2HtSIrPWnXw8S7toSS5Pqklx4VkRva6lTzwZLFEbt41S58YVPetd-T0dCxf1QCCbj8OXYPq61hWAQRfUtHyldaKojU_Nql_LJDcOJDhQaRxnA9Tm7NFlPbB08Y95tutQ-JPbbThAmmtm9mHYCTuLwk7b4u3UmXT3lwjPB6oSFpYUq5ie4h');">
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-700">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                                    style="background-image: url('images/laine.png');">
+                                </div>
+                            </div>
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 hero-gradient"></div>
+                            <div class="absolute inset-0 p-12 flex flex-col justify-end items-start text-white">
+                                <span
+                                    class="bg-primary px-3 py-1 rounded text-xs font-bold uppercase tracking-widest mb-4">Tradition
+                                    &amp; Savoir-faire</span>
+                                <h1 class="text-5xl md:text-6xl font-black leading-tight mb-4 max-w-2xl">Filature des
+                                    Landes – Catusse</h1>
+                                <p class="text-lg md:text-xl font-light text-slate-100 mb-8 max-w-xl italic">
+                                    Traditionnelle filature et tissage de laine d'excellence en Aveyron depuis des
+                                    générations.</p>
+                                <div class="flex items-center gap-4">
+                                    <button
+                                        class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-bold transition-all flex items-center gap-2">
+                                        Portfolio <span class="material-symbols-outlined">arrow_forward</span>
+                                    </button>
+                                    <button
+                                        class="glass text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition-all">
+                                        Voir +
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Navigation -->
+                            <div class="absolute bottom-12 right-12 flex items-center gap-4">
+                                <button id="carousel-prev"
+                                    class="size-12 rounded-full glass flex items-center justify-center text-white hover:bg-primary transition-all">
+                                    <span class="material-symbols-outlined">chevron_left</span>
+                                </button>
+                                <div class="flex gap-2" id="carousel-dots">
+                                    <span class="carousel-dot w-8 h-1 bg-primary rounded-full cursor-pointer"></span>
+                                    <span class="carousel-dot w-8 h-1 bg-white/50 rounded-full cursor-pointer"></span>
+                                    <span class="carousel-dot w-8 h-1 bg-white/50 rounded-full cursor-pointer"></span>
+                                </div>
+                                <button id="carousel-next"
+                                    class="size-12 rounded-full glass flex items-center justify-center text-white hover:bg-primary transition-all">
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                </button>
+                            </div>
+                        </div>
+                        <script>
+                                (function () {
+                                    var current = 0;
+                                    var slides = document.querySelectorAll('.carousel-slide');
+                                    var dots = document.querySelectorAll('.carousel-dot');
+                                    var total = slides.length;
+                                    function goTo(n) {
+                                        slides[current].style.opacity = '0';
+                                        dots[current].className = 'carousel-dot w-8 h-1 bg-white/50 rounded-full cursor-pointer';
+                                        current = (n + total) % total;
+                                        slides[current].style.opacity = '1';
+                                        dots[current].className = 'carousel-dot w-8 h-1 bg-primary rounded-full cursor-pointer';
+                                    }
+                                    document.getElementById('carousel-prev').addEventListener('click', function () { goTo(current - 1); });
+                                    document.getElementById('carousel-next').addEventListener('click', function () { goTo(current + 1); });
+                                    dots.forEach(function (dot, i) { dot.addEventListener('click', function () { goTo(i); }); });
+                                    setInterval(function () { goTo(current + 1); }, 5000);
+                                })();
+                        </script>
+                        <div
+                            class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800">
+                            <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-4">Bienvenue sur le site de
+                                la filature des landes</h2>
+                            <p class="text-xl text-primary font-medium mb-6">Située à Villecomtal en Aveyron.</p>
+                            <div class="grid md:grid-cols-2 gap-8 text-slate-600 dark:text-slate-400 leading-relaxed">
+                                <p>Découvrez l'excellence de la production de laine dans notre atelier traditionnel.
+                                    Nous perpétuons des gestes séculaires pour transformer la matière brute en produits
+                                    d'exception, alliant confort naturel et durabilité artisanale.</p>
+                                <p>Notre passion pour le textile nous amène à vous proposer des gammes variées allant de
+                                    la literie haut de gamme aux laines à tricoter les plus fines, sans oublier la
+                                    fabrication de matériel pour les passionnés du fil.</p>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="flex flex-col gap-6">
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary text-3xl">inventory_2</span>
+                                    <h3 class="text-xl font-bold uppercase tracking-wide">Nos gammes de produits</h3>
+                                </div>
+                                <div class="grid gap-3">
+                                    <div
+                                        class="group flex items-center justify-between p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-all cursor-pointer">
+                                        <span class="font-medium">Métiers à tisser</span>
+                                        <span
+                                            class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-all">chevron_right</span>
+                                    </div>
+                                    <div
+                                        class="group flex items-center justify-between p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-all cursor-pointer">
+                                        <span class="font-medium">Literie</span>
+                                        <span
+                                            class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-all">chevron_right</span>
+                                    </div>
+                                    <div
+                                        class="group flex items-center justify-between p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-all cursor-pointer">
+                                        <span class="font-medium">Laines</span>
+                                        <span
+                                            class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-all">chevron_right</span>
+                                    </div>
+                                    <div
+                                        class="group flex items-center justify-between p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-all cursor-pointer">
+                                        <span class="font-medium">Rouets et autres matériels</span>
+                                        <span
+                                            class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-all">chevron_right</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-6">
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary text-3xl">handyman</span>
+                                    <h3 class="text-xl font-bold uppercase tracking-wide">Notre savoir faire</h3>
+                                </div>
+                                <div class="grid gap-3">
+                                    <div
+                                        class="flex items-center gap-4 p-4 rounded-xl bg-primary/5 border border-primary/10">
+                                        <div class="size-2 rounded-full bg-primary"></div>
+                                        <span class="font-medium">Fabrication de métiers à tisser</span>
+                                    </div>
+                                    <div
+                                        class="flex items-center gap-4 p-4 rounded-xl bg-primary/5 border border-primary/10">
+                                        <div class="size-2 rounded-full bg-primary"></div>
+                                        <span class="font-medium">Fabrication de matelas</span>
+                                    </div>
+                                    <div
+                                        class="flex items-center gap-4 p-4 rounded-xl bg-primary/5 border border-primary/10">
+                                        <div class="size-2 rounded-full bg-primary"></div>
+                                        <span class="font-medium">Tissage</span>
+                                    </div>
+                                    <div
+                                        class="flex items-center gap-4 p-4 rounded-xl bg-primary/5 border border-primary/10">
+                                        <div class="size-2 rounded-full bg-primary"></div>
+                                        <span class="font-medium">Filage</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="flex flex-col gap-8">
+                        <div
+                            class="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800">
+                            <h3
+                                class="text-sm font-black text-slate-400 uppercase tracking-widest mb-6 border-b border-slate-100 dark:border-slate-800 pb-2">
+                                Ateliers &amp; Stages</h3>
+                            <div class="flex flex-col gap-4">
+                                <a class="group flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all"
+                                    href="#">
+                                    <span class="material-symbols-outlined text-primary mt-1">factory</span>
+                                    <span
+                                        class="text-sm font-bold leading-tight group-hover:text-primary transition-colors">LES
+                                        ATELIERS DE LA FILATURE</span>
+                                </a>
+                                <a class="group flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all"
+                                    href="#">
+                                    <span class="material-symbols-outlined text-primary mt-1">palette</span>
+                                    <span
+                                        class="text-sm font-bold leading-tight group-hover:text-primary transition-colors">STAGE
+                                        DE FEUTRE A L'AIGUILLE ET A L'EAU</span>
+                                </a>
+                                <a class="group flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all"
+                                    href="#">
+                                    <span class="material-symbols-outlined text-primary mt-1">diversity_3</span>
+                                    <span
+                                        class="text-sm font-bold leading-tight group-hover:text-primary transition-colors">AUTRES
+                                        FORMATIONS</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bg-primary/5 p-6 rounded-2xl border border-primary/10">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="material-symbols-outlined text-primary">mail</span>
+                                <h3 class="text-sm font-black text-slate-900 dark:text-white uppercase tracking-widest">
+                                    Newsletter</h3>
+                            </div>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">Restez informés
+                                de nos actualités et de nos prochains ateliers.</p>
+                            <div class="flex flex-col gap-2">
+                                <input
+                                    class="w-full bg-white dark:bg-slate-800 border-none rounded-lg text-sm px-4 py-2 shadow-sm"
+                                    placeholder="votre@email.com" type="email" />
+                                <button
+                                    class="bg-primary text-white text-xs font-bold py-2 rounded-lg hover:bg-primary/90 transition-all">S'INSCRIRE</button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Partager cette
+                                page</h3>
+                            <div class="grid grid-cols-1 gap-2">
+                                <button
+                                    class="flex items-center gap-3 px-4 py-2 rounded-lg bg-[#1877F2]/10 text-[#1877F2] text-xs font-bold hover:bg-[#1877F2] hover:text-white transition-all">
+                                    <span class="material-symbols-outlined text-base">share</span> Recommander sur
+                                    Facebook
+                                </button>
+                                <button
+                                    class="flex items-center gap-3 px-4 py-2 rounded-lg bg-black/5 dark:bg-white/10 text-slate-900 dark:text-white text-xs font-bold hover:bg-slate-900 dark:hover:bg-white hover:text-white dark:hover:text-slate-900 transition-all">
+                                    <span class="material-symbols-outlined text-base">chat</span> Twitter cette page
+                                </button>
+                                <button
+                                    class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-200/50 text-slate-600 text-xs font-bold hover:bg-slate-200 transition-all">
+                                    <span class="material-symbols-outlined text-base">alternate_email</span> Envoyer par
+                                    e-mail
+                                </button>
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+            </main>
+            <footer class="bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 mt-20">
+                <div class="max-w-[1440px] mx-auto w-full px-4 md:px-10 lg:px-20 py-12">
+                    <div class="grid md:grid-cols-4 gap-12">
+                        <div class="md:col-span-2">
+                            <div class="flex items-center gap-3 mb-6">
+                                <a href="index.html" class="flex items-center">
+                                    <img src="images/logo.png" alt="Filature des Landes Logo"
+                                        class="h-10 w-auto grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all">
+                                </a>
+                            </div>
+                            <p class="text-sm text-slate-500 max-w-sm mb-6">
+                                Atelier de fabrication artisanale situé à Villecomtal (12580). Spécialiste de la laine,
+                                du tissage et de la fabrication de matériel textile traditionnel.
+                            </p>
+                            <p class="text-xs text-slate-400">© 2026 Filature des Landes. Tous droits réservés.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold mb-6 uppercase tracking-wider">Navigation</h4>
+                            <ul class="flex flex-col gap-3 text-sm text-slate-500">
+                                <li><a class="hover:text-primary transition-colors" href="#">Mentions légales</a></li>
+                                <li><a class="hover:text-primary transition-colors" href="#">Plan du site</a></li>
+                                <li><a class="hover:text-primary transition-colors" href="#">Conditions de vente</a>
+                                </li>
+                                <li><a class="hover:text-primary transition-colors" href="#">Politique de
+                                        confidentialité</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold mb-6 uppercase tracking-wider">Contact</h4>
+                            <ul class="flex flex-col gap-3 text-sm text-slate-500">
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-base">location_on</span> Villecomtal,
+                                    Aveyron</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-base">call</span> +33 (0)5 XX XX XX XX
+                                </li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-base">mail</span>
+                                    contact@filature-landes.fr</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

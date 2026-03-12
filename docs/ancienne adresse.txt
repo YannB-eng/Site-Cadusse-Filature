@@ -1,0 +1,63 @@
+ID :DOM101457973-FRNIC
+Nom :catusse-filature.fr
+Nom du registrar sponsor :101domain GRS Ltd
+ID du sponsor :RAR931-FRNIC
+Email du contact abuse :abuse@101domain.com
+Téléphone du contact abuse :+1.8582954626
+Serveur Whois du registrar :
+Site web du registrar :http://101domain.com
+Création :03/11/2023, 16:32 UTC
+Dernière mise à jour :10/09/2025, 00:07 UTC
+Date d'expiration :03/11/2026, 16:32 UTC
+Statut :active
+Serveur de nom :alfred.ns.cloudflare.com
+Serveur de nom :sky.ns.cloudflare.com
+
+Titulaire
+ID :UDL201-FRNIC
+Nom :101domain DAS Limited
+Organisation :101domain Das Limited
+Rue :6th Floor
+Rue (Complément 1) :2 Grand Canal Square
+Ville :Dublin 2
+Code postal :D02 A342
+Code pays :IE
+Téléphone :+1.7604448674
+Email :fr-trustee@101domain.com
+Création :11/06/2021, 18:05 UTC
+Mise à jour :26/02/2026, 11:03 UTC
+Joignabilité :YES
+Eligibilité :OK
+
+Contacts administratifs
+ID :UDL201-FRNIC
+Nom :101domain DAS Limited
+Organisation :101domain Das Limited
+Rue :6th Floor
+Rue (Complément 1) :2 Grand Canal Square
+Ville :Dublin 2
+Code postal :D02 A342
+Code pays :IE
+Téléphone :+1.7604448674
+Email :fr-trustee@101domain.com
+Création :11/06/2021, 18:05 UTC
+Mise à jour :26/02/2026, 11:03 UTC
+Joignabilité :YES
+Eligibilité :OK
+
+Contacts techniques
+ID :OM8520-FRNIC
+Nom :Operations Manager
+Organisation :101domain GRS Limited
+Rue :4th Floor, International House
+Rue (Complément 1) :3 Harbourmaster Place
+Rue (Complément 2) :IFSC
+Ville :Dublin
+Code postal :D01
+Code pays :IE
+Téléphone :+1.7607363700
+Email :domains@101domain.com
+Création :23/05/2019, 14:33 UTC
+Mise à jour :09/03/2026, 18:40 UTC
+Joignabilité :NO
+Eligibilité :NotIdentified

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tarifs Métiers à tisser - Filature des Landes</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#cf8217",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#211a11",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(207, 130, 23, 0.1);
+        }
+
+        .dark .glass-card {
+            background: rgba(33, 26, 17, 0.7);
+            border: 1px solid rgba(207, 130, 23, 0.2);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Top Navigation Bar -->
+            <header class="sticky top-0 z-50 glass-card border-b border-primary/10">
+                <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                            <img src="images/logo.png" alt="Filature des Landes Logo" class="h-10 w-auto">
+                            <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Filature des Landes</span>
+                        </a>
+                    </div>
+                    <nav class="hidden md:flex items-center gap-10">
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="index.html">Accueil</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="entreprise.html">Entreprise</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="actualites.html">Actualités</a>
+                        <a class="text-sm font-semibold text-primary uppercase tracking-wider" href="produits.html">Produits</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="galerie.html">Galerie</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="contact.html">Contact</a>
+                    </nav>
+                    <div class="flex items-center gap-4">
+                        <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all">
+                            <span class="material-symbols-outlined">shopping_bag</span>
+                        </button>
+                        <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all">
+                            <span class="material-symbols-outlined">person</span>
+                        </button>
+                        <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all md:hidden">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1 px-6 md:px-20 py-8 lg:px-40">
+                <!-- Breadcrumbs -->
+                <div class="flex items-center gap-2 mb-8 text-sm">
+                    <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors"
+                        href="#">Accueil</a>
+                    <span class="material-symbols-outlined text-[14px] text-slate-400">chevron_right</span>
+                    <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors"
+                        href="#">Produits</a>
+                    <span class="material-symbols-outlined text-[14px] text-slate-400">chevron_right</span>
+                    <span class="text-primary font-medium">Tarifs Métiers à tisser</span>
+                </div>
+                <!-- Hero Header Section -->
+                <section class="mb-16">
+                    <div class="max-w-4xl">
+                        <h1
+                            class="text-slate-900 dark:text-slate-100 text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight mb-6">
+                            MÉTIERS À TISSER <span class="text-primary">- TARIFS</span>
+                        </h1>
+                        <div
+                            class="glass-card p-6 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-sm">
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary text-3xl">info</span>
+                                <div>
+                                    <p class="text-slate-800 dark:text-slate-200 font-bold text-lg">CATUSSE PIERRE SAS -
+                                        Filature des Landes</p>
+                                    <p class="text-slate-600 dark:text-slate-400">Artisanat d'excellence et savoir-faire
+                                        traditionnel depuis des générations.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2 text-sm text-slate-700 dark:text-slate-300">
+                                <a class="flex items-center gap-2 hover:text-primary transition-colors"
+                                    href="tel:+330565301101">
+                                    <span class="material-symbols-outlined text-[18px]">phone</span>
+                                    +33 (0)5 65 30 11 01
+                                </a>
+                                <a class="flex items-center gap-2 hover:text-primary transition-colors"
+                                    href="mailto:email@catusse.fr">
+                                    <span class="material-symbols-outlined text-[18px]">mail</span>
+                                    email@catusse.fr
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Product Grid -->
+                <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- PÉNÉLOPE -->
+                    <div
+                        class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-primary/5">
+                        <div class="aspect-[4/3] overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10">
+                            </div>
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Traditional Penelope weaving loom in wooden workshop"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM02tdEg_ImxbxKnWXHVzeHWjvKlAr7rzsB64uM7bH33ZXKdw1qZffY3azB3Mxw-1CMqBg11sBFYrcGUA0SNjGiGC1_P8F7bdUX2z-Sf-SV6MydSrBbvTHDJpuaW8gcsDqj8zRsa-gnheGjR_8LYFTSyUBuPA7OAu6sL5f81quOsMftNhGe0OHAY9mi0gfaFLxB5J0Vvyi5If8FocXIsJdapDJ4dADFIGbahKQv1yX7SR4UKv78R64_Z44JnHtTqfyLl2jxnG_Fl2q" />
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">PÉNÉLOPE</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 flex-1">
+                                Le classique indémodable. Disponible en plusieurs tailles pour s'adapter à tous vos
+                                projets de tissage créatif.
+                            </p>
+                            <div class="flex items-center justify-between border-t border-primary/10 pt-4">
+                                <span class="text-primary font-bold">Prix sur devis</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PLIANT -->
+                    <div
+                        class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-primary/5">
+                        <div class="aspect-[4/3] overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10">
+                            </div>
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Compact folding weaving loom for small spaces"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcFvmb3Ze6D5hk__VjQmo2aS5oYzFATbMkQvZr_tJzvAIuBJxWsva36cgb0d0xiACBbsEQ7zXTyjbFWFIV5sg1A_HUNXuIzt6HJh_-JNSqKkkJguXr7qUQVWcwyKQwyK-wIySgu3AT1gdFw9Zyd7F27IytmnAvVT58uTQBj69_h_VQSdM4u8K4gmeTVI4xLWwntqbLq8bPEB-0r70Kl9wlipxG06S9KTNgO6BTuv2aO2uG31BTYEXiOeIeUSUJ0KfNPxG_8FG7LbKm" />
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">PLIANT</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 flex-1">
+                                Métier compact et robuste, idéal pour les espaces restreints sans compromis sur la
+                                qualité de tension.
+                            </p>
+                            <div class="flex items-center justify-between border-t border-primary/10 pt-4">
+                                <span class="text-primary font-bold">Prix sur devis</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TAPISSERIE GOBELIN -->
+                    <div
+                        class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-primary/5">
+                        <div class="aspect-[4/3] overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10">
+                            </div>
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Large professional Gobelin tapestry loom"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1voP0Kk27QlIcDMA8K1aF-uXudtAeZxIsOAL4OfaW9UXvZZtloKGVye7SC3DbbGsKi7YkuCsZKmk7YjrIzp8X46hKqaFXou_i2sLoSInZ0gtqcnsLdB7ejAeO9mmR0ekL2i7rq_1k0_OCw4e5QpIQxVXURX-lc_A8NAc-T6CVSQWH7wi2-kTZ2CNM6g2kT-B38F8VgQyjv9QhB0p8zZC-aEBe7DFXoWvqypl9Y1fAMHxFQH27haxwpZ6y0EPWb3CIMjUSusLBwRom" />
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">TAPISSERIE GOBELIN
+                            </h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 flex-1">
+                                Modèle professionnel de haute précision conçu pour la réalisation de tapisseries d'art
+                                complexes.
+                            </p>
+                            <div class="flex items-center justify-between border-t border-primary/10 pt-4">
+                                <span class="text-primary font-bold">Prix sur devis</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PREMIER TISSAGE -->
+                    <div
+                        class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-primary/5">
+                        <div class="aspect-[4/3] overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10">
+                            </div>
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Beginner weaving kit with colorful wool"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCFpIwRxVCkL2DOZv6TV_1O9MzUR74hQYL_vQlBjmp4TrR4XnvbUTxqERXarcNVNJm1_GQi8CVvsLYTknRf1pKCRtg-Sn7zeBKxKB_NIGaFuku8HlqbIlLpnvAWIZiqfzPB-mk7FuOAR3qmTsN7vPRIjULV9XcK4u6qCzYWVDoFOmuKCQH2XiWsCX_f5YaHdlRpsiUO0CSLt_fd2R4ioch-oinWSoU9nIXpua9Im3dCTHjCj925Q-rNZZKvVfIh2ZeOFq41tbOqzTf" />
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">PREMIER TISSAGE</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 flex-1">
+                                Parfait pour l'initiation des débutants et des enfants. Une approche ludique et
+                                pédagogique du tissage.
+                            </p>
+                            <div class="flex items-center justify-between border-t border-primary/10 pt-4">
+                                <span class="text-primary font-bold">Prix sur devis</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ROUE DE TISSAGE -->
+                    <div
+                        class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-primary/5">
+                        <div class="aspect-[4/3] overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10">
+                            </div>
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Traditional wooden spinning wheel for wool"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpPbTZO0PjelQ4RVOo07dPhJh6XZrtwyWCRxwsa91Ue6YQJxD53RiQxNh3ZrauK2klf90aPPrv66jsAsvAFj_YOHxxsm90j2oYbBprEy2lEUSExAE_m_10Z-XV2gbmFkqLuug1L59EHFFyNkbCZ-e0R5xuP9RPKj_V5reCTZv9GajjvLOsEciI7dSC2BtEH2o6dSmCvveIDfm3LndhzYRWyKfPRcJgMYAkDBSI4RsyD76WFVSyRHWQoXTTqyO3vgT_w0m6x6RQMTJt" />
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">ROUE DE TISSAGE</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 flex-1">
+                                Roue traditionnelle en bois massif, équilibrée avec précision pour un filage fluide et
+                                régulier.
+                            </p>
+                            <div class="flex items-center justify-between border-t border-primary/10 pt-4">
+                                <span class="text-primary font-bold">Prix sur devis</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ROUERGUE -->
+                    <div
+                        class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-primary/5">
+                        <div class="aspect-[4/3] overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10">
+                            </div>
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Classic Rouergue model loom in oak wood"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD1X-kgh6Teod3VdCq_SVGiRwfnIJyMKckYC1jcsMdHOkL8KnPChIhExUrutdawW1kdmaumKSVdl0hONYMPyrkTIpBF7Lz6qI2GgoK2fKGI85ANvpa1fbdqoxJpxSXiRUQgJtSdkXUkYz-MFzrvez4sxCaSx3-h3sdrcenIYLMJcEWFrx28cGIUc-BdBxQJqEz0wc-DLSfYz1PZVqFDUSF8Di7aQQ0dsMsYdQnVh7RimsLOdrrp2gIuCkRfDd-n1-EnXXtEHzi1BR_" />
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">ROUERGUE</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 flex-1">
+                                Le modèle emblématique de notre région. Allie robustesse ancestrale et confort
+                                d'utilisation moderne.
+                            </p>
+                            <div class="flex items-center justify-between border-t border-primary/10 pt-4">
+                                <span class="text-primary font-bold">Prix sur devis</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BABETH -->
+                    <div
+                        class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-primary/5">
+                        <div class="aspect-[4/3] overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10">
+                            </div>
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Elegant Babeth model weaving loom for fine wool"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTaVAXeW_Sha9JPd8eZK1xmdG2Pm_pFWeADU_L7VJMlZNLN5tvhcxT9NKsFk_xY9DycgDP9PGDho_6Wlj2tgiXnmjBPg4jnm_rAo7sH1KDtHs8skkAwAXTPNvGwUJuaXTaGrm8b-EsI-6zkrm_vQSZQt8ulVLRwk-zskf45M4ZGU5v2aqTCtCKiwSOVPGI-l0Wf7ozntB5v7FX0kKKbRX0-33RG-6iiOQwvAkEgJj-1OgkXVDrLFmf9qVa3KPUrtcl7xtH0bzX0rZV" />
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">BABETH</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 flex-1">
+                                Un design élégant et épuré. Pensé pour les tisserands exigeants qui cherchent finesse et
+                                fluidité.
+                            </p>
+                            <div class="flex items-center justify-between border-t border-primary/10 pt-4">
+                                <span class="text-primary font-bold">Prix sur devis</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- GÉRARD DE TABLE -->
+                    <div
+                        class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-primary/5">
+                        <div class="aspect-[4/3] overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10">
+                            </div>
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Small desktop weaving loom for sample making"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9Dfqq_YSkMXzstD3VjgBn826xB6g91NTgIZ78QBDAZ30DTAcp6kAsbIxcnXD4M-64UBMcCX8C7k-AP5DE79Uzr4D-PsBcRtONCyDEClU-WtYCRrCgqPMYEFKmIIy5e0zvEYSnGHanbhXOwBwrUv147ntFMX1rKWVghfENjh3USyHhg39awMRaiLC6sgGOr2muza1e55DzCXx8U9RUZU4H3frCDAf_-1BPP1dtDsjcE4VS16gSfxfBJqpY5uNTmfECmhmdypaCnyvp" />
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">GÉRARD DE TABLE</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 flex-1">
+                                Métier de table polyvalent. Idéal pour réaliser des échantillons ou des pièces de petite
+                                largeur.
+                            </p>
+                            <div class="flex items-center justify-between border-t border-primary/10 pt-4">
+                                <span class="text-primary font-bold">Prix sur devis</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AUBUSSON -->
+                    <div
+                        class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-primary/5">
+                        <div class="aspect-[4/3] overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10">
+                            </div>
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Masterpiece Aubusson tapestry loom with intricate work"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuByLdTi_MevdZ--AB5TYvqmHrj2cm70JG2-bxuDiYkhWvHCr_93g6WKQds02aKzpkEY4_DDv8QvgrzutyymVpaWwg8mMBF7JqG66kitI6m60G378smHtTTSn0fBIBvtvhfDHvupXuYcgH95gFNh6iIG-XQC-8NymN-YkXRNyJj0pxlFkOnCPwKtlZSxr_Qpl8F5WvSwEq6VxcSKAK97bXDWaRy80UF6QeCaNmAyL_GvPy-eGT9gG4TA9hzhpK6BGokn-ug6h-gMGWFh" />
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">AUBUSSON</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 flex-1">
+                                L'excellence de la tapisserie de prestige. Un matériel d'exception pour des œuvres d'une
+                                vie.
+                            </p>
+                            <div class="flex items-center justify-between border-t border-primary/10 pt-4">
+                                <span class="text-primary font-bold">Prix sur devis</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Call to Action Section -->
+                <section class="mt-24 mb-16">
+                    <div
+                        class="glass-card rounded-2xl p-8 md:p-16 text-center max-w-5xl mx-auto shadow-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
+                            <span class="material-symbols-outlined text-[200px] text-primary">architecture</span>
+                        </div>
+                        <h2
+                            class="text-3xl md:text-4xl font-black text-slate-900 dark:text-slate-100 mb-4 relative z-10">
+                            Un projet spécifique ?</h2>
+                        <p class="text-lg text-slate-700 dark:text-slate-300 max-w-2xl mx-auto mb-10 relative z-10">
+                            Chaque tisserand est unique. Nous réalisons des devis personnalisés pour adapter nos métiers
+                            à tisser à vos besoins d'artisanat d'excellence.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+                            <button
+                                class="flex items-center justify-center min-w-[200px] h-14 rounded-lg bg-primary text-white font-bold text-lg hover:shadow-xl hover:shadow-primary/30 transition-all">
+                                Demander un devis
+                            </button>
+                            <button
+                                class="flex items-center justify-center min-w-[200px] h-14 rounded-lg border-2 border-primary text-primary font-bold text-lg hover:bg-primary/5 transition-all">
+                                Nous contacter
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- Footer -->
+            <footer class="bg-slate-900 text-slate-300 px-6 md:px-20 py-16">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-[1400px] mx-auto">
+                    <div class="col-span-1 md:col-span-1">
+                        <div class="flex items-center gap-3 text-primary mb-6">
+                            <div class="size-8">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-white text-xl font-bold">Filature des Landes</h2>
+                        </div>
+                        <p class="text-sm leading-relaxed mb-6">Filature de laine traditionnelle au cœur des Landes.
+                            Nous perpétuons un savoir-faire rare pour vous offrir le meilleur du tissage.</p>
+                        <div class="flex gap-4">
+                            <a class="size-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-[20px]">share</span>
+                            </a>
+                            <a class="size-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-[20px]">camera</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-6">Nos Produits</h4>
+                        <ul class="space-y-4 text-sm">
+                            <li><a class="hover:text-primary transition-colors" href="#">Métiers à tisser</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Laines &amp; Fibres</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Accessoires de tissage</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Savonnerie Artisanale</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-6">Société</h4>
+                        <ul class="space-y-4 text-sm">
+                            <li><a class="hover:text-primary transition-colors" href="#">Notre Histoire</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">L'Atelier</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Blog &amp; Actualités</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Mentions Légales</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-6">Newsletter</h4>
+                        <p class="text-sm mb-4">Recevez nos actualités et conseils de tissage.</p>
+                        <div class="flex flex-col gap-3">
+                            <input
+                                class="bg-slate-800 border-none rounded-lg text-sm focus:ring-1 focus:ring-primary h-11 px-4"
+                                placeholder="Votre email" type="email" />
+                            <button
+                                class="bg-primary text-white font-bold h-11 rounded-lg hover:bg-primary/90 transition-all">S'abonner</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-slate-800 mt-16 pt-8 text-center text-xs text-slate-500">
+                    © 2026 Filature des Landes - Catusse Pierre SAS. Tous droits réservés.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

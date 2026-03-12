@@ -1,0 +1,509 @@
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#cf8217",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#211a11",
+                        "soft-brown": "#8c7355",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .glass-effect {
+                background: rgba(255, 255, 255, 0.45);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border: 1px solid rgba(255, 255, 255, 0.4);
+            }
+            .dark .glass-effect {
+                background: rgba(33, 26, 17, 0.5);
+                border: 1px solid rgba(207, 130, 23, 0.1);
+            }
+            .hide-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+            .hide-scrollbar {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            .wool-pattern {
+                background-image: radial-gradient(circle at 2px 2px, rgba(207, 130, 23, 0.05) 1px, transparent 0);
+                background-size: 24px 24px;
+            }
+            .timeline-gradient {
+                background: linear-gradient(180deg, transparent 0%, #cf8217 15%, #cf8217 85%, transparent 100%);
+            }
+            .organic-blob {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+    <header class="sticky top-0 z-50 glass-effect border-b border-primary/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                    <img src="images/logo.png" alt="Filature des Landes Logo" class="h-10 w-auto">
+                    <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Filature des
+                        Landes</span>
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                    href="index.html">Accueil</a>
+                <a class="text-sm font-semibold text-primary uppercase tracking-wider"
+                    href="entreprise.html">Entreprise</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                    href="actualites.html">Actualités</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                    href="produits.html">Produits</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                    href="galerie.html">Galerie</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                    href="contact.html">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                </button>
+                <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all">
+                    <span class="material-symbols-outlined">person</span>
+                </button>
+                <div class="size-10 rounded-full bg-cover bg-center ring-2 ring-primary/20"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDp_97UNEgoNvY-fzvEj5um768tdi3TP3RmBeok9UGC37pYQmi5Ee7d0sOQyazTW10cisTRQvtzhL8SpnlXSB0kQw3ySIoHsAwCeLCpSrjXHM5VIxJwRKP7tB4v_MGwOPzU6trOsmOnwTmMrwvlhoOZoWZll-vNn5FT-8cmJs7NZ6RufKO2vNaG_oAZn2l-qC_yETdyvA4wjITBf1eiz1bOkINOz5BHbOH9WV320JOq_cHLZL0YIcaeDzq1aQhXXEvmokJZ2kl6ypYY");'>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full">
+        <section class="relative h-[60vh] min-h-[500px] flex items-end">
+            <div class="absolute inset-0 z-0">
+                <div class="w-full h-full bg-cover bg-center"
+                    style='background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCXDRkrD88PdQAEcO-ljtVokVtLTD-SP-htMv-fxZoBIa9bAWvVTHI3OjKVELbjcQZzr0Hv8ESCIV3zSNzwHeO-T0gDgquKWWTvQBVhpk9pmeos6OC3En0zjU04UvjELZN7BUs5X4M_bw0K7abPg6Ov4xavU4YrpbGQGUoGbhtxc-HNSyw0dtccx86Z8QFiO5-yS4uzXQWXwMd8uzDAsZKRyE-Al8Q0A5tB6QSeK4G2EGyq53cnoEL-v5K8q0RkvjaaJ34p-NwftNW9");'>
+                </div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pb-16 w-full">
+                <div class="max-w-3xl glass-effect p-8 lg:p-12 rounded-xl">
+                    <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Héritage &amp;
+                        Passion</span>
+                    <h1 class="text-4xl lg:text-6xl font-serif font-bold leading-tight mb-6">NOTRE HISTOIRE &amp; NOTRE
+                        SAVOIR-FAIRE</h1>
+                    <p class="text-lg opacity-90 leading-relaxed">
+                        Au cœur de l'Aveyron, la famille Catusse perpétue depuis des générations l'art délicat de la
+                        transformation de la laine, ancrant chaque fibre dans la tradition de Villecomtal.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <h2 class="text-3xl font-serif font-bold text-slate-900 dark:text-slate-100">Un héritage familial au
+                        cœur de l'Aveyron</h2>
+                    <p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+                        Depuis plusieurs générations, la famille Catusse perpétue l'art de la filature à Villecomtal.
+                        Notre passion pour la laine se traduit par un savoir-faire artisanal d'exception, alliant
+                        tradition et exigence contemporaine.
+                    </p>
+                    <p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+                        Chaque étape, du tri de la toison brute au filage final, est réalisée avec une attention
+                        méticuleuse, garantissant une qualité que seule la main de l'homme et l'expérience du temps
+                        peuvent offrir.
+                    </p>
+                    <div class="pt-4">
+                        <div
+                            class="inline-flex items-center gap-4 p-4 rounded-xl bg-primary/5 border border-primary/10">
+                            <span class="material-symbols-outlined text-4xl text-primary">verified</span>
+                            <div>
+                                <p class="font-bold text-slate-900 dark:text-slate-100">Certifié Artisanal</p>
+                                <p class="text-sm opacity-70">Savoir-faire reconnu en Aveyron</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 h-[500px]">
+                    <div class="rounded-xl bg-cover bg-center shadow-xl"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZTGRNzyQxF0mLJfhxdLGFHja406y9esEBJj1-JyuaCXaeOWp2XkUzTVXIoITIjBpFaSMgswFHZlTMBGK0mCXpPc6GHQTzn9EzAgrEmY9_bB5TDYVcWMM5BP_frvdKNgKiLZ2u-xV57_0uAT9vHwOGesVQwFvEY5GPYpZxVIv_psFjG7sjQ4pH0fvdZIBtIWNOR3Er6fJ2F9G9kZpulw8NXlw6Oot1JM4-UO9swDZlk9HUlWkZl5yVi2afkPzROwmdezuH4yXSLuwj");'>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="h-1/2 rounded-xl bg-cover bg-center shadow-xl"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwBY0Dg_hJFSNlvLkfah-a4v7yGOinfdqmGdOXtHRDFRth4NnbnH16Aa-6WbAfhpNduLQuYNT-TtWimhCAZf-DiR_dqHPO0JwBf43vx97aOXRhZL6pDpdsYY-ZfXFxxbAExdrbBv-1v9yZVt8EBvj2bj25frvRkxz3Uk47uBv34U1I0vT1XdnY5BOGFWEAlu168Er08ovEHkzi-4BgzZe0xZKtq60r-cLmPbVgOZuuhpDiSeZ48nNrSe0KrnMFQF40bfUFz0K9jdXw");'>
+                        </div>
+                        <div class="h-[calc(50%-1rem)] rounded-xl bg-cover bg-center shadow-xl"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPU8Y4i6tvPauIiuEUtLdxV_hkkyMJKm_5SKbrxAxZVlSQu0J4AKuZJp9YXwXT7YLKXku3CqXV_MJWl4ivBm2Z8itzSr3pI6bWWoMzP4GlZ3XY7VVFy20YBztpMbveHWER6XucNzMPwOYscw_9oOlai3VQhwT5HdudRYs9mVLRNJVBVaFxir31RsZ6qqBMbuRTUIrSoWga652rNuoEog_YWueVLCOfcydeEWMaEW7K65HN2z2nvWz6XfBkt6nXqWWYrKkFoRaORxng");'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-32 relative overflow-hidden wool-pattern bg-background-light dark:bg-background-dark">
+            <div class="absolute top-20 -left-20 w-96 h-96 bg-primary/5 organic-blob blur-3xl opacity-60"></div>
+            <div
+                class="absolute bottom-40 -right-20 w-[500px] h-[500px] bg-soft-brown/5 organic-blob blur-3xl opacity-40 rotate-45">
+            </div>
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full pointer-events-none opacity-5">
+                <svg height="100%" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
+                    <path d="M0,50 Q25,45 50,50 T100,50" fill="none" stroke="#cf8217" stroke-width="0.1"></path>
+                    <path d="M0,52 Q25,47 50,52 T100,52" fill="none" stroke="#cf8217" stroke-width="0.05"></path>
+                </svg>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+                <div class="text-center mb-24">
+                    <span class="text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Héritage
+                        temporel</span>
+                    <h2 class="text-4xl lg:text-5xl font-serif font-bold text-slate-900 dark:text-slate-100 italic">Nos
+                        Grandes Étapes</h2>
+                    <div class="w-16 h-0.5 bg-primary/30 mx-auto mt-8"></div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="absolute left-1/2 transform -translate-x-1/2 h-full w-[1px] timeline-gradient opacity-30 hidden lg:block">
+                    </div>
+                    <div class="relative mb-24 lg:mb-32 flex flex-col lg:flex-row items-center justify-between w-full">
+                        <div class="lg:w-5/12 text-center lg:text-right mb-8 lg:mb-0">
+                            <div
+                                class="glass-effect p-8 lg:p-10 rounded-2xl shadow-sm border-l-4 lg:border-l-0 lg:border-r-4 border-primary transition-transform hover:-translate-y-1 duration-500">
+                                <span
+                                    class="text-4xl lg:text-5xl font-serif font-black text-primary/20 block mb-4">1890</span>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4 tracking-tight">Les
+                                    Premiers Pas</h3>
+                                <p class="text-slate-600 dark:text-slate-400 leading-relaxed font-light">Installation de
+                                    la première machine à carder au bord de la rivière de Villecomtal par l'aïeul
+                                    Catusse.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="size-14 rounded-full glass-effect border border-primary/30 flex items-center justify-center relative z-10 hidden lg:flex shadow-xl">
+                            <div class="size-3 rounded-full bg-primary animate-pulse"></div>
+                        </div>
+                        <div class="lg:w-5/12"></div>
+                    </div>
+                    <div
+                        class="relative mb-24 lg:mb-32 flex flex-col lg:flex-row-reverse items-center justify-between w-full">
+                        <div class="lg:w-5/12 text-center lg:text-left mb-8 lg:mb-0">
+                            <div
+                                class="glass-effect p-8 lg:p-10 rounded-2xl shadow-sm border-r-4 lg:border-r-0 lg:border-l-4 border-primary/60 transition-transform hover:-translate-y-1 duration-500">
+                                <span
+                                    class="text-4xl lg:text-5xl font-serif font-black text-primary/20 block mb-4">1952</span>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4 tracking-tight">
+                                    L'Expansion Industrielle</h3>
+                                <p class="text-slate-600 dark:text-slate-400 leading-relaxed font-light">Modernisation
+                                    de l'atelier avec l'arrivée des métiers à filer automatiques, augmentant la
+                                    production locale.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="size-14 rounded-full glass-effect border border-primary/30 flex items-center justify-center relative z-10 hidden lg:flex shadow-xl">
+                            <div class="size-3 rounded-full bg-primary opacity-60"></div>
+                        </div>
+                        <div class="lg:w-5/12"></div>
+                    </div>
+                    <div class="relative mb-24 lg:mb-32 flex flex-col lg:flex-row items-center justify-between w-full">
+                        <div class="lg:w-5/12 text-center lg:text-right mb-8 lg:mb-0">
+                            <div
+                                class="glass-effect p-8 lg:p-10 rounded-2xl shadow-sm border-l-4 lg:border-l-0 lg:border-r-4 border-primary/40 transition-transform hover:-translate-y-1 duration-500">
+                                <span
+                                    class="text-4xl lg:text-5xl font-serif font-black text-primary/20 block mb-4">1998</span>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4 tracking-tight">Le
+                                    Renouveau Artisanal</h3>
+                                <p class="text-slate-600 dark:text-slate-400 leading-relaxed font-light">Recentrage sur
+                                    les laines haut de gamme et les teintures naturelles, privilégiant la qualité sur la
+                                    quantité.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="size-14 rounded-full glass-effect border border-primary/30 flex items-center justify-center relative z-10 hidden lg:flex shadow-xl">
+                            <div class="size-3 rounded-full bg-primary opacity-40"></div>
+                        </div>
+                        <div class="lg:w-5/12"></div>
+                    </div>
+                    <div class="relative flex flex-col lg:flex-row-reverse items-center justify-between w-full">
+                        <div class="lg:w-5/12 text-center lg:text-left mb-8 lg:mb-0">
+                            <div
+                                class="glass-effect p-8 lg:p-10 rounded-2xl shadow-sm border-r-4 lg:border-r-0 lg:border-l-4 border-primary transition-transform hover:-translate-y-1 duration-500">
+                                <span
+                                    class="text-2xl lg:text-3xl font-serif font-bold text-primary block mb-4 italic">Aujourd'hui</span>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4 tracking-tight">
+                                    Transmission &amp; Innovation</h3>
+                                <p class="text-slate-600 dark:text-slate-400 leading-relaxed font-light">La nouvelle
+                                    génération unit tradition familiale et approches durables pour une filature du XXIe
+                                    siècle.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="size-14 rounded-full bg-primary border-4 border-background-light dark:border-background-dark flex items-center justify-center relative z-10 hidden lg:flex shadow-2xl">
+                            <span class="material-symbols-outlined text-white text-xl">auto_awesome</span>
+                        </div>
+                        <div class="lg:w-5/12"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 max-w-7xl mx-auto px-6 lg:px-10">
+            <h2 class="text-3xl font-serif font-bold mb-16 text-center">Nos Valeurs</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="p-8 rounded-xl glass-effect border-t-4 border-primary shadow-sm hover:shadow-md transition-shadow">
+                    <span class="material-symbols-outlined text-4xl text-primary mb-6">workspace_premium</span>
+                    <h3 class="text-xl font-bold mb-4">Excellence</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Une recherche constante de la perfection dans le choix des fibres et la finesse du filage pour
+                        une expérience sensorielle unique.
+                    </p>
+                </div>
+                <div
+                    class="p-8 rounded-xl glass-effect border-t-4 border-primary shadow-sm hover:shadow-md transition-shadow">
+                    <span class="material-symbols-outlined text-4xl text-primary mb-6">history_edu</span>
+                    <h3 class="text-xl font-bold mb-4">Tradition</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Le respect des méthodes ancestrales qui ont fait la renommée de la laine d'Aveyron à travers les
+                        âges.
+                    </p>
+                </div>
+                <div
+                    class="p-8 rounded-xl glass-effect border-t-4 border-primary shadow-sm hover:shadow-md transition-shadow">
+                    <span class="material-symbols-outlined text-4xl text-primary mb-6">eco</span>
+                    <h3 class="text-xl font-bold mb-4">Localité</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Un engagement fort pour l'économie circulaire et le circuit court en travaillant main dans la
+                        main avec les éleveurs locaux.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-background-dark text-slate-100">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    <div class="lg:w-1/2">
+                        <div class="aspect-video rounded-xl bg-cover bg-center overflow-hidden"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDbfeiMQozeXU9VvxFYR4NcAspD1czwyGD4n-r6HfV9IHE-qlhyF8vjyKRRux_4yX1ADRqUfNigJaE6d_kZLGlmLHlIrwbioR6wJq3KK4GxD4WGDwBxGlrXW0kL8R8fEyq_mpTsc4Cxt9Ou44vPSnNz6ZYnRQvoCWf_HwMziwn0cf6LP0y1SuFsSFQohRvrO15J1MN8uM0Pq7lYhqe-goU37ct8qh2DWmpA7ktizzPUPomP0MK1dItut0K9aVlccb1H1WhmC9sxG3gU");'>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 space-y-6">
+                        <h2 class="text-3xl font-serif font-bold">L'Atelier d'aujourd'hui</h2>
+                        <p class="text-lg text-slate-400 leading-relaxed">
+                            Notre atelier à Villecomtal est un lieu vivant où se mêlent le ronronnement des machines
+                            historiques et l'énergie créative de nos artisans. C'est ici que chaque année, des tonnes de
+                            laine brute sont transformées en trésors de douceur.
+                        </p>
+                        <p class="text-lg text-slate-400 leading-relaxed">
+                            Nous ouvrons régulièrement nos portes aux passionnés pour partager les secrets de notre
+                            fabrication. Un parcours pédagogique permet de découvrir tout le cycle de vie du produit.
+                        </p>
+                        <a class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-all"
+                            href="#">
+                            Visiter l'Atelier
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-32 overflow-hidden bg-background-light dark:bg-background-dark">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
+                <div class="text-center mb-16">
+                    <span class="text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Partage
+                        d'expériences</span>
+                    <h2 class="text-3xl lg:text-4xl font-serif font-bold">Témoignages clients</h2>
+                    <div class="w-16 h-0.5 bg-primary/30 mx-auto mt-6"></div>
+                </div>
+                <div class="relative">
+                    <div class="flex gap-8 overflow-x-auto pb-12 snap-x snap-mandatory hide-scrollbar">
+                        <div class="min-w-[320px] md:min-w-[420px] snap-center">
+                            <div
+                                class="h-full glass-effect p-10 rounded-2xl flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-500 border-b-2 border-b-primary/20">
+                                <div>
+                                    <span
+                                        class="material-symbols-outlined text-primary/30 text-5xl mb-6 block">format_quote</span>
+                                    <p
+                                        class="text-lg italic text-slate-700 dark:text-slate-300 leading-relaxed mb-8 font-light">
+                                        "La qualité de la laine brute que je reçois de Villecomtal est incomparable. On
+                                        sent le geste de l'artisan derrière chaque bobine, une douceur qui sublime mes
+                                        créations."
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-8 h-[1px] bg-primary/40"></div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 dark:text-slate-100 tracking-tight">Marie L.
+                                        </h4>
+                                        <p class="text-xs uppercase tracking-widest text-primary font-medium mt-1">
+                                            Artisane à Rodez</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="min-w-[320px] md:min-w-[420px] snap-center">
+                            <div
+                                class="h-full glass-effect p-10 rounded-2xl flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-500 border-b-2 border-b-primary/20">
+                                <div>
+                                    <span
+                                        class="material-symbols-outlined text-primary/30 text-5xl mb-6 block">format_quote</span>
+                                    <p
+                                        class="text-lg italic text-slate-700 dark:text-slate-300 leading-relaxed mb-8 font-light">
+                                        "Travailler avec les produits de la Filature des Landes est un honneur. Leurs
+                                        métiers à tisser traditionnels produisent une texture que je ne retrouve nulle
+                                        part ailleurs."
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-8 h-[1px] bg-primary/40"></div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 dark:text-slate-100 tracking-tight">Thomas
+                                            B.</h4>
+                                        <p class="text-xs uppercase tracking-widest text-primary font-medium mt-1">
+                                            Créateur textile à Albi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="min-w-[320px] md:min-w-[420px] snap-center">
+                            <div
+                                class="h-full glass-effect p-10 rounded-2xl flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-500 border-b-2 border-b-primary/20">
+                                <div>
+                                    <span
+                                        class="material-symbols-outlined text-primary/30 text-5xl mb-6 block">format_quote</span>
+                                    <p
+                                        class="text-lg italic text-slate-700 dark:text-slate-300 leading-relaxed mb-8 font-light">
+                                        "Un retour aux sources essentiel. La laine de Villecomtal est devenue la pièce
+                                        maîtresse de mes collections d'hiver. Durable, éthique et d'une beauté rare."
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-8 h-[1px] bg-primary/40"></div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 dark:text-slate-100 tracking-tight">Sophie
+                                            D.</h4>
+                                        <p class="text-xs uppercase tracking-widest text-primary font-medium mt-1">
+                                            Styliste à Toulouse</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="min-w-[320px] md:min-w-[420px] snap-center">
+                            <div
+                                class="h-full glass-effect p-10 rounded-2xl flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-500 border-b-2 border-b-primary/20">
+                                <div>
+                                    <span
+                                        class="material-symbols-outlined text-primary/30 text-5xl mb-6 block">format_quote</span>
+                                    <p
+                                        class="text-lg italic text-slate-700 dark:text-slate-300 leading-relaxed mb-8 font-light">
+                                        "En tant que tapissier, je cherche l'authenticité. Ici, chaque fibre raconte une
+                                        histoire de terroir. C'est le luxe de l'artisanat français à l'état pur."
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-8 h-[1px] bg-primary/40"></div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 dark:text-slate-100 tracking-tight">
+                                            Jean-Marc P.</h4>
+                                        <p class="text-xs uppercase tracking-widest text-primary font-medium mt-1">
+                                            Tapissier à Millau</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center gap-3 mt-4">
+                        <div class="w-8 h-1 rounded-full bg-primary"></div>
+                        <div class="w-2 h-1 rounded-full bg-primary/30"></div>
+                        <div class="w-2 h-1 rounded-full bg-primary/30"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-background-light dark:bg-background-dark border-t border-primary/10 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="text-primary">
+                            <span class="material-symbols-outlined text-2xl">settings_accessibility</span>
+                        </div>
+                        <h2 class="text-lg font-bold tracking-tight">Filature des Landes</h2>
+                    </div>
+                    <p class="text-sm opacity-70 leading-relaxed">
+                        Artisans fileurs de père en fils à Villecomtal, Aveyron. Laine de qualité supérieure et produits
+                        naturels.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">L'Entreprise</h4>
+                    <ul class="space-y-4 text-sm opacity-70">
+                        <li><a class="hover:text-primary transition-colors" href="#">Notre Histoire</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">L'Atelier</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Le Savoir-faire</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Engagement Éco</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Boutique</h4>
+                    <ul class="space-y-4 text-sm opacity-70">
+                        <li><a class="hover:text-primary transition-colors" href="#">Toutes les Laines</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Savonnerie</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Accessoires</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Nouveautés</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Contact</h4>
+                    <ul class="space-y-4 text-sm opacity-70">
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">location_on</span>
+                            12580 Villecomtal, France
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">mail</span>
+                            contact@filaturedeslandes.com
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">phone</span>
+                            +33 (0)5 65 44 60 00
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="pt-8 border-t border-primary/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs opacity-50">
+                <p>© 2024 Filature des Landes – Catusse. Tous droits réservés.</p>
+                <div class="flex gap-6">
+                    <a class="hover:text-primary transition-colors" href="#">Mentions Légales</a>
+                    <a class="hover:text-primary transition-colors" href="#">CGV</a>
+                    <a class="hover:text-primary transition-colors" href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

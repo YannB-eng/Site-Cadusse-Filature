@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#cf8217",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#211a11",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display overflow-x-hidden">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Header -->
+            <header class="sticky top-0 z-50 glass-panel border-b border-primary/10">
+                <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                            <img src="images/logo.png" alt="Filature des Landes Logo" class="h-10 w-auto">
+                            <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Filature
+                                des Landes</span>
+                        </a>
+                    </div>
+                    <nav class="hidden md:flex items-center gap-10">
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                            href="index.html">Accueil</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                            href="entreprise.html">Entreprise</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                            href="actualites.html">Actualités</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                            href="produits.html">Produits</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                            href="galerie.html">Galerie</a>
+                        <a class="text-sm font-semibold text-primary uppercase tracking-wider"
+                            href="contact.html">Contact</a>
+                    </nav>
+                    <div class="flex items-center gap-4">
+                        <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all">
+                            <span class="material-symbols-outlined">shopping_bag</span>
+                        </button>
+                        <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all">
+                            <span class="material-symbols-outlined">person</span>
+                        </button>
+                        <button
+                            class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all md:hidden">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </header>>
+            <main class="flex-1">
+                <!-- Hero Section -->
+                <div class="relative h-[300px] w-full overflow-hidden bg-background-dark">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-60"
+                        data-alt="Détail de laine artisanale sur un métier à tisser"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDcFgNWSR72VW8LJvaEcSBp0ztATKdR5b7-2q3Po8AFLhEE0iV-86ciKpH4FySI2TSjzvjCmmreHxPkXWQDHLxwX9VXIFNLd85_mz79FakIr8PuBQVGLI5qVIb9-8Y06P4OhxNZxVX5MhJLGn5ZK98PZXl6JEV5ol-sdnGDPWvHb27uezKhxLiwmnXFBMnzMvtxJrsDsEWeGF1smpiCeTWJrOW_prjGmEje9MN_2ZCsxj4B24QEXmm42xl4wGL44mA6M_jU67kkZP33');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-background-light to-transparent"></div>
+                    <div class="relative h-full flex flex-col items-center justify-center text-center px-4">
+                        <span class="text-primary font-semibold tracking-[0.3em] uppercase text-sm mb-4">Contactez
+                            l'Atelier</span>
+                        <h1 class="text-slate-900 text-5xl md:text-6xl font-bold tracking-tight mb-6">NOUS CONTACTER
+                        </h1>
+                        <div class="w-24 h-1 bg-primary"></div>
+                    </div>
+                </div>
+                <!-- Intro Section -->
+                <section class="max-w-4xl mx-auto px-6 py-16 text-center">
+                    <p class="text-slate-700 text-lg leading-relaxed font-light italic">
+                        "Nichée au cœur du vallon de Villecomtal en Aveyron, notre filature perpétue depuis des
+                        générations l'art délicat de la transformation de la laine. Nous sommes à votre écoute pour
+                        accompagner vos projets créatifs."
+                    </p>
+                </section>
+                <!-- Contact Grid -->
+                <section class="max-w-7xl mx-auto px-6 pb-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Left Column: Info & Form -->
+                    <div class="space-y-12">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="glass-panel p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <span class="material-symbols-outlined text-primary mb-4 text-3xl">call</span>
+                                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-2">Téléphone
+                                </h3>
+                                <p id="phone-reveal"
+                                    class="text-xl font-medium text-slate-900 cursor-pointer select-none">
+                                    <span
+                                        class="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
+                                        <span class="material-symbols-outlined text-base">visibility</span>
+                                        <span class="text-sm">Cliquez pour afficher</span>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="glass-panel p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <span class="material-symbols-outlined text-primary mb-4 text-3xl">mail</span>
+                                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-2">Email</h3>
+                                <p id="email-reveal"
+                                    class="text-lg font-medium text-slate-900 cursor-pointer select-none">
+                                    <span
+                                        class="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
+                                        <span class="material-symbols-outlined text-base">visibility</span>
+                                        <span class="text-sm">Cliquez pour afficher</span>
+                                    </span>
+                                </p>
+                            </div>
+                            <script>
+                                    (function () {
+                                        var p = [48, 53, 32, 54, 53, 32, 52, 52, 32, 54, 49, 32, 49, 51];
+                                        var e = [99, 97, 116, 117, 115, 115, 101, 46, 102, 105, 108, 97, 116, 117, 114, 101, 64, 111, 114, 97, 110, 103, 101, 46, 102, 114];
+                                        document.getElementById('phone-reveal').addEventListener('click', function () {
+                                            var t = p.map(function (c) { return String.fromCharCode(c) }).join('');
+                                            this.innerHTML = '<a href="tel:+33565446113" class="hover:text-primary transition-colors">' + t + '</a>';
+                                        });
+                                        document.getElementById('email-reveal').addEventListener('click', function () {
+                                            var t = e.map(function (c) { return String.fromCharCode(c) }).join('');
+                                            this.innerHTML = '<a href="mai' + 'lto:' + t + '" class="hover:text-primary transition-colors">' + t + '</a>';
+                                        });
+                                    })();
+                            </script>
+                        </div>
+                        <div class="bg-white/40 border border-slate-200 p-10 rounded-3xl shadow-xl backdrop-blur-sm">
+                            <h2 class="text-2xl font-bold text-slate-900 mb-8">Envoyez-nous un message</h2>
+                            <form class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="flex flex-col gap-2">
+                                        <label
+                                            class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Prénom</label>
+                                        <input
+                                            class="h-12 px-4 rounded-xl border-slate-200 bg-white/50 focus:ring-primary focus:border-primary transition-all"
+                                            placeholder="Jean" type="text" />
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <label
+                                            class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Nom</label>
+                                        <input
+                                            class="h-12 px-4 rounded-xl border-slate-200 bg-white/50 focus:ring-primary focus:border-primary transition-all"
+                                            placeholder="Dupont" type="text" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label
+                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Email</label>
+                                    <input
+                                        class="h-12 px-4 rounded-xl border-slate-200 bg-white/50 focus:ring-primary focus:border-primary transition-all"
+                                        placeholder="votre@email.fr" type="email" />
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label
+                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Sujet</label>
+                                    <select
+                                        class="h-12 px-4 rounded-xl border-slate-200 bg-white/50 focus:ring-primary focus:border-primary transition-all">
+                                        <option>Demande d'information</option>
+                                        <option>Demande de stage</option>
+                                        <option>Commande personnalisée</option>
+                                        <option>Visite de l'atelier</option>
+                                        <option>Autre</option>
+                                    </select>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label
+                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Message</label>
+                                    <textarea
+                                        class="p-4 rounded-xl border-slate-200 bg-white/50 focus:ring-primary focus:border-primary transition-all"
+                                        placeholder="Comment pouvons-nous vous aider ?" rows="5"></textarea>
+                                </div>
+                                <button
+                                    class="w-full h-14 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/30 hover:shadow-primary/40 hover:-translate-y-0.5 transition-all"
+                                    type="submit">
+                                    ENVOYER LE MESSAGE
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Right Column: Map & Address -->
+                    <div class="flex flex-col gap-8">
+                        <div class="glass-panel p-8 rounded-2xl flex-1 flex flex-col">
+                            <div class="flex items-center gap-4 mb-8">
+                                <span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+                                <div>
+                                    <h3 class="text-lg font-bold text-slate-900">Atelier de Villecomtal</h3>
+                                    <p class="text-slate-600">Route de Rodez, 12580 Villecomtal, France</p>
+                                </div>
+                            </div>
+                            <!-- Google Maps -->
+                            <div class="flex-1 min-h-[400px] w-full rounded-xl overflow-hidden relative"
+                                style="filter: grayscale(100%) contrast(1.1); transition: filter 0.6s ease;"
+                                onmouseenter="this.style.filter='grayscale(0%) contrast(1)'"
+                                onmouseleave="this.style.filter='grayscale(100%) contrast(1.1)'">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.5!2d2.5685!3d44.5225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b26c5e6e5b1b1b%3A0x4073c5e4a7b1a8a0!2sVillecomtal%2C%2012580%2C%20France!5e0!3m2!1sfr!2sfr!4v1710000000000"
+                                    width="100%" height="100%" style="border:0; position:absolute; inset:0;"
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <div class="mt-4 bg-white/80 backdrop-blur-md p-4 rounded-lg">
+                                <p class="text-xs text-slate-500 uppercase tracking-widest font-bold mb-1">Horaires
+                                    d'ouverture</p>
+                                <div class="flex justify-between text-sm text-slate-900">
+                                    <span>Lundi - Vendredi</span>
+                                    <span class="font-medium">09h00 - 18h00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-primary/5 border border-primary/10 p-8 rounded-2xl">
+                            <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary">verified</span>
+                                Engagement Qualité
+                            </h4>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Nous nous engageons à vous répondre sous 24h à 48h ouvrées. Chaque demande est traitée
+                                avec le plus grand soin par notre équipe artisanale.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- Footer -->
+            <footer class="bg-background-dark text-slate-400 py-16 px-10 border-t border-white/5">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+                    <div class="col-span-1 md:col-span-1">
+                        <a href="index.html" class="flex items-center gap-3 mb-6">
+                            <img src="images/logo.png" alt="Filature des Landes Logo"
+                                class="h-10 w-auto grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all">
+                        </a>
+                        <p class="text-sm leading-relaxed mb-6">
+                            L'excellence de la laine aveyronnaise au service des artisans et des créateurs depuis des
+                            décennies.
+                        </p>
+                        <div class="flex gap-4">
+                            <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all"
+                                href="#">
+                                <span class="material-symbols-outlined text-white text-lg">share</span>
+                            </a>
+                            <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all"
+                                href="#">
+                                <span class="material-symbols-outlined text-white text-lg">camera</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Navigation</h3>
+                        <ul class="space-y-4 text-sm">
+                            <li><a class="hover:text-primary transition-colors" href="#">Accueil</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Nos Produits</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Le Savoir-faire</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Visiter l'Atelier</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Informations</h3>
+                        <ul class="space-y-4 text-sm">
+                            <li><a class="hover:text-primary transition-colors" href="#">Livraisons</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Conditions de vente</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Mentions légales</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Confidentialité</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Newsletter</h3>
+                        <p class="text-sm mb-4">Inscrivez-vous pour recevoir nos actualités et nouveaux arrivages.</p>
+                        <div class="flex gap-2">
+                            <input
+                                class="bg-white/5 border-white/10 rounded-lg h-10 px-4 text-sm flex-1 focus:ring-primary focus:border-primary"
+                                placeholder="Votre email" type="email" />
+                            <button class="bg-primary text-white px-4 rounded-lg text-sm font-bold">OK</button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 text-center text-[10px] uppercase tracking-[0.2em]">
+                    © 2026 Filature des Landes - Catusse. Tous droits réservés.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Galerie du Savoir-Faire - Filature des Landes</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#cf8217",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#211a11",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .masonry-item:hover .overlay-text {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .zoom-img {
+            transition: transform 0.5s ease;
+        }
+
+        .masonry-item:hover .zoom-img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <!-- Navigation Header -->
+        <header class="sticky top-0 z-50 glass-effect border-b border-primary/10">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                        <img src="images/logo.png" alt="Filature des Landes Logo" class="h-10 w-auto">
+                        <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Filature des Landes</span>
+                    </a>
+                </div>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="index.html">Accueil</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="entreprise.html">Entreprise</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="actualites.html">Actualités</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="produits.html">Produits</a>
+                    <a class="text-sm font-semibold text-primary uppercase tracking-wider" href="galerie.html">Galerie</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="contact.html">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                    </button>
+                    <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all">
+                        <span class="material-symbols-outlined">person</span>
+                    </button>
+                    <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all md:hidden">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1 max-w-[1200px] mx-auto w-full px-6 py-12">
+            <!-- Hero Title Section -->
+            <section class="text-center mb-16">
+                <div
+                    class="inline-block px-4 py-1 mb-6 border border-primary/20 rounded-full bg-primary/5 text-primary text-xs font-bold uppercase tracking-widest">
+                    Immersion Artisanale
+                </div>
+                <h1
+                    class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8 text-slate-900 dark:text-slate-100">
+                    NOTRE SAVOIR-FAIRE EN IMAGES
+                </h1>
+                <div class="max-w-3xl mx-auto">
+                    <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-light">
+                        Découvrez les étapes de transformation de la laine au sein de notre atelier. Du tri méticuleux
+                        des toisons à la confection sur nos métiers à tisser traditionnels <span
+                            class="text-primary font-medium italic">Pénélope et Gérard</span>, chaque geste témoigne
+                        d'un héritage préservé depuis des générations.
+                    </p>
+                </div>
+            </section>
+            <!-- Masonry-style Grid -->
+            <section class="grid grid-cols-1 md:grid-cols-12 gap-6 pb-20">
+                <!-- Large Main Feature -->
+                <div
+                    class="md:col-span-8 group relative overflow-hidden rounded-xl bg-primary/10 aspect-video md:aspect-auto md:h-[500px] masonry-item shadow-xl">
+                    <div class="absolute inset-0 bg-cover bg-center zoom-img"
+                        data-alt="Intérieur d'un atelier de filature de laine traditionnel"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZ_S5VPeb7vCV9aQZutAw0p6Hi_ing3tzR2AIct2lBzAEieYvnpbfyJCcnPS0GBCvAMcfUQhjrht5JtU-ErNp1nFCuEOF295rxlWmGWZDgK8kZwHcp7uhGSJ_MUdgmOWfpjgabKqKP4FGB8FmIyLf1KCwhxVm4CjeQvNFAf6p_lwCNAmHCCoh7gwP8u77BvXCXQV3riyzA4VPw_fqMIqRSViA0iPXuaFG9iIQ1QUdSYRj3xCbLpv2BLjGMwGmvsMyfbM7ldbofpj18");'>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60">
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full overlay-text transition-all duration-300">
+                        <span
+                            class="text-primary font-bold text-xs uppercase tracking-widest mb-2 block">L'Atelier</span>
+                        <h3 class="text-3xl font-bold text-white mb-2">La filature</h3>
+                        <p class="text-white/80 max-w-md">L'espace sacré où les fibres se transforment en fils
+                            d'exception sous l'œil attentif de nos artisans.</p>
+                    </div>
+                </div>
+                <!-- Vertical Side Feature -->
+                <div
+                    class="md:col-span-4 group relative overflow-hidden rounded-xl bg-primary/10 h-[500px] masonry-item shadow-xl">
+                    <div class="absolute inset-0 bg-cover bg-center zoom-img"
+                        data-alt="Différentes pelotes de laine de couleurs naturelles"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAroxh8Q03t8p9hdtKvlr6J68Y_C2B9UIh96wnxYwOCk2cO9ULS5hnwOZ0JFAuxXlJOZ6y0OIZcd7x_mEqgbcj-PvJLmJl066mwgoJJUuBN9Ir_Rivy6JOLcQ7Ev5qCwd7VD8nGNw1kO_Ss1BP92qRQZFWGMlZV-gOgwThmAx43NBSNotbsBk6TN6Ec_sa3U5zL0lk1pCHojOXJKG7CmnBvHxDB9c1ImQzZeeJEG2rrYgsL-qnaiEpT856qSHG1hAfLfXdqPQ9296rF");'>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-60">
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-8 overlay-text transition-all duration-300">
+                        <span
+                            class="text-primary font-bold text-xs uppercase tracking-widest mb-2 block">Matières</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">La laine brute et teinte</h3>
+                        <p class="text-white/80">Une palette de textures et de teintes naturelles issues de nos terres
+                            landaises.</p>
+                    </div>
+                </div>
+                <!-- Loom Pénélope -->
+                <div
+                    class="md:col-span-6 group relative overflow-hidden rounded-xl bg-primary/10 h-[400px] masonry-item shadow-xl">
+                    <div class="absolute inset-0 bg-cover bg-center zoom-img"
+                        data-alt="Détail d'un métier à tisser en bois ancien"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmWFU1DbEIQV2hjsWcH3ijN18bAcG_g0KhS5bR_FjtTIsyWImmDlI1a1m_eP7xgpaVtvHVM4MjoiCbE2pIYAvUDUod0Xe-szJ8tHmj2BPgLiL-ryisLoigVpgdnbhjssEYRN_NoUvYQtuxJ2-A6_dsx7JIMXYdjMO7TLitoypT1O9AxQLEW4hWNQ1MAg4-XJvIqnfuGn9StBY_x_tnI3PqYffGGL1UIO4ewLKUjAiNujAPguocNzOl-Rv7CX6X6KCFCtVx9d7nxNdF");'>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-60">
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-8 overlay-text transition-all duration-300">
+                        <span
+                            class="text-primary font-bold text-xs uppercase tracking-widest mb-2 block">Technique</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">Le métier à tisser Pénélope</h3>
+                        <p class="text-white/80">Précision et patience pour des pièces aux motifs complexes et raffinés.
+                        </p>
+                    </div>
+                </div>
+                <!-- Loom Gérard -->
+                <div
+                    class="md:col-span-6 group relative overflow-hidden rounded-xl bg-primary/10 h-[400px] masonry-item shadow-xl">
+                    <div class="absolute inset-0 bg-cover bg-center zoom-img"
+                        data-alt="Navette en bois sur un métier à tisser traditionnel"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBL45LD_OrfRHTKvDHL04MCGQNu4c8gtn7O-UMVc9Jqn3uU8Ib8Udf-8IGdxUwD22PbXzC-XimvMsj7EZ7_00vdL9r9YcxUMflt_-NaXXNlSojDDp6ZezOWu9qffCuB1fcBIJn-ybdncG4o1oTzkK0nd_6erT0OwLwdlbcp4-Je1rZbSheE-_gacHrebB5y3PYlnv_wcD00hmLx7ucLvloTbwEqYxqkh_P_XmS1GE64maE9RiK4DWTduc2MoNBKmInm016OCYRDXJq8");'>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-60">
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-8 overlay-text transition-all duration-300">
+                        <span
+                            class="text-primary font-bold text-xs uppercase tracking-widest mb-2 block">Tradition</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">Le métier à tisser Gérard</h3>
+                        <p class="text-white/80">Force et caractère pour nos tissages les plus denses et authentiques.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Newsletter / Contact Section -->
+            <section
+                class="bg-primary/5 rounded-2xl p-8 md:p-12 mb-20 flex flex-col md:flex-row items-center justify-between border border-primary/10">
+                <div class="mb-8 md:mb-0 md:mr-10 text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-2">Souhaitez-vous visiter l'atelier ?</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Inscrivez-vous à nos journées portes ouvertes et
+                        découvrez nos secrets de fabrication.</p>
+                </div>
+                <div class="flex w-full md:w-auto gap-3">
+                    <input
+                        class="flex-1 min-w-[240px] px-6 py-3 rounded-full border-primary/20 bg-white dark:bg-background-dark focus:ring-primary focus:border-primary"
+                        placeholder="Votre email" type="email" />
+                    <button
+                        class="bg-primary text-white font-bold px-8 py-3 rounded-full hover:bg-primary/90 transition-all shadow-lg whitespace-nowrap">S'inscrire</button>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-slate-900 text-slate-400 py-16 px-6 lg:px-40 mt-auto">
+            <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-6">
+                        <img src="images/logo.png" alt="Filature des Landes Logo" class="h-10 w-auto grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all">
+                    </a>
+                    <p class="text-sm leading-relaxed">
+                        Artisan filateur et tisseur dans les Landes depuis 1947. L'excellence de la laine au service de
+                        votre confort.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Liens utiles</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="#">Notre histoire</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">La boutique</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Entretien de la laine</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Contact</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-xs text-primary">location_on</span>
+                            <span>Catusse, 40000 Mont-de-Marsan</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-xs text-primary">call</span>
+                            <span>05 58 00 00 00</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-xs text-primary">mail</span>
+                            <span>contact@filaturedeslandes.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Suivez-nous</h4>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">camera</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">share</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-[1200px] mx-auto pt-16 mt-16 border-t border-slate-800 text-center text-xs">
+                © 2026 Filature des Landes – Tous droits réservés. Design artisanal.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
