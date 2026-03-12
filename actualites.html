@@ -61,17 +61,22 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
-                    <img src="images/logo.png" alt="Filature des Landes Logo" class="h-10 w-auto">
-                    <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Filature des Landes</span>
+                    <img src="images/logo.png" alt="Filature des Landes Logo" class="h-12 w-auto">
                 </a>
             </div>
             <nav class="hidden md:flex items-center gap-10">
-                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="index.html">Accueil</a>
-                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="entreprise.html">Entreprise</a>
-                <a class="text-sm font-semibold text-primary uppercase tracking-wider" href="actualites.html">Actualités</a>
-                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="produits.html">Produits</a>
-                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="galerie.html">Galerie</a>
-                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider" href="contact.html">Contact</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                    href="index.html">Accueil</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                    href="entreprise.html">Entreprise</a>
+                <a class="text-sm font-semibold text-primary uppercase tracking-wider"
+                    href="actualites.html">Actualités</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                    href="produits.html">Produits</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                    href="galerie.html">Galerie</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wider"
+                    href="contact.html">Contact</a>
             </nav>
             <div class="flex items-center gap-4">
                 <button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all">
@@ -297,56 +302,93 @@
         </div>
     </main>
     <!-- Footer -->
-    <footer class="bg-neutral-soft/30 border-t border-neutral-soft mt-20 py-16">
-        <div class="max-w-7xl mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-4 gap-12">
-            <div class="space-y-6">
-                <a href="index.html" class="flex items-center gap-3">
-                    <img src="images/logo.png" alt="Filature des Landes Logo" class="h-10 w-auto grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all">
-                </a>
-                <p class="text-text-muted text-sm leading-relaxed">
-                    Artisans du textile depuis des générations en Aveyron, nous transformons la laine brute en fils
-                    d'exception.
-                </p>
-            </div>
-            <div>
-                <h4 class="font-bold text-sm uppercase tracking-widest mb-6">Navigation</h4>
-                <ul class="space-y-3 text-sm text-text-muted">
-                    <li><a class="hover:text-primary transition-colors" href="#">Accueil</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Actualités</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Ateliers</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Boutique</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold text-sm uppercase tracking-widest mb-6">Contact</h4>
-                <ul class="space-y-3 text-sm text-text-muted">
-                    <li class="flex items-center gap-3"><span
-                            class="material-symbols-outlined text-sm">location_on</span> Catusse, Aveyron</li>
-                    <li class="flex items-center gap-3"><span class="material-symbols-outlined text-sm">mail</span>
-                        contact@filature-landes.fr</li>
-                    <li class="flex items-center gap-3"><span class="material-symbols-outlined text-sm">call</span> +33
-                        5 XX XX XX XX</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold text-sm uppercase tracking-widest mb-6">Suivez-nous</h4>
-                <div class="flex gap-4">
-                    <a class="w-10 h-10 rounded-full bg-white border border-neutral-soft flex items-center justify-center text-text-muted hover:text-primary hover:border-primary transition-all shadow-sm"
-                        href="#">
-                        <span class="material-symbols-outlined text-lg">share</span>
-                    </a>
+    <footer class="bg-background-light dark:bg-background-dark border-t border-primary/10 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <a href="index.html" class="flex items-center">
+                            <img src="images/logo.png" alt="Filature des Landes Logo"
+                                class="h-10 w-auto grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all">
+                        </a>
+                    </div>
+                    <p class="text-sm opacity-70 leading-relaxed mb-6">
+                        Artisan filateur et tisseur dans les Landes depuis 1947. L'excellence de la laine au service de
+                        votre confort.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-primary/70 hover:text-white"
+                            href="#">
+                            <span class="material-symbols-outlined text-lg">camera</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-primary/70 hover:text-white"
+                            href="#">
+                            <span class="material-symbols-outlined text-lg">share</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase tracking-wider text-sm">Navigation</h4>
+                    <ul class="space-y-4 text-sm opacity-70">
+                        <li><a class="hover:text-primary transition-colors" href="index.html">Accueil</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="entreprise.html">L'Entreprise</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="actualites.html">Actualités</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="produits.html">Nos Produits</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="galerie.html">Galerie</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase tracking-wider text-sm">Informations Légales</h4>
+                    <ul class="space-y-4 text-sm opacity-70">
+                        <li><a class="hover:text-primary transition-colors" href="#">Mentions légales</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">CGV</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Politique de confidentialité</a>
+                        </li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Plan du site</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase tracking-wider text-sm">Contact</h4>
+                    <ul class="space-y-4 text-sm opacity-70">
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">location_on</span>
+                            12580 Villecomtal, France
+                        </li>
+                        <li id="footer-email-act" class="flex items-center gap-2 cursor-pointer select-none">
+                            <span class="material-symbols-outlined text-sm">mail</span>
+                            <span class="text-primary hover:text-primary/80 transition-colors text-xs">Cliquez pour
+                                afficher</span>
+                        </li>
+                        <li id="footer-phone-act" class="flex items-center gap-2 cursor-pointer select-none">
+                            <span class="material-symbols-outlined text-sm">phone</span>
+                            <span class="text-primary hover:text-primary/80 transition-colors text-xs">Cliquez pour
+                                afficher</span>
+                        </li>
+                    </ul>
+                    <script>
+                            (function () {
+                                var p = [48, 53, 32, 54, 53, 32, 52, 52, 32, 54, 49, 32, 49, 51];
+                                var e = [99, 97, 116, 117, 115, 115, 101, 46, 102, 105, 108, 97, 116, 117, 114, 101, 64, 111, 114, 97, 110, 103, 101, 46, 102, 114];
+                                document.getElementById('footer-phone-act').addEventListener('click', function () {
+                                    var t = p.map(function (c) { return String.fromCharCode(c) }).join('');
+                                    this.innerHTML = '<span class="material-symbols-outlined text-sm">phone</span> <a href="tel:+33565446113" class="hover:text-primary transition-colors">' + t + '</a>';
+                                });
+                                document.getElementById('footer-email-act').addEventListener('click', function () {
+                                    var t = e.map(function (c) { return String.fromCharCode(c) }).join('');
+                                    this.innerHTML = '<span class="material-symbols-outlined text-sm">mail</span> <a href="mai' + 'lto:' + t + '" class="hover:text-primary transition-colors">' + t + '</a>';
+                                });
+                            })();
+                    </script>
                 </div>
             </div>
-        </div>
-        <div
-            class="max-w-7xl mx-auto px-6 lg:px-20 mt-16 pt-8 border-t border-neutral-soft flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-text-muted uppercase tracking-widest font-semibold">
-            <p>© 2026 Filature des Landes - Tous droits réservés</p>
-            <div class="flex gap-8">
-                <a class="hover:text-primary" href="#">Mentions Légales</a>
-                <a class="hover:text-primary" href="#">CGV</a>
+            <div class="pt-8 border-t border-primary/5 text-center text-xs opacity-50">
+                <p>© 2026 Byosphère pour Filature des Landes. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
+
+
 </body>
 
 </html>
